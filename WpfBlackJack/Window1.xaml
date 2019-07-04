@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfBlackJack.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest"
+        mc:Ignorable="d"
+        Title="戦闘" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="347,159,0,0" Source="/Resources/cardgame_deck.png"/>
+
+        <Image x:Name="userhand1_Copy3" HorizontalAlignment="Left" Height="77" Margin="347,285,0,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="1.382,0.532"/>
+
+        <StackPanel x:Name="userhands" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,285,0,0" VerticalAlignment="Top">
+        </StackPanel>
+
+        <StackPanel x:Name="dealerhands" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,20,0,0" VerticalAlignment="Top">
+        </StackPanel>
+        <Button x:Name="drawbutton" Content="引く" HorizontalAlignment="Left" Height="38" Margin="140,183,0,0" VerticalAlignment="Top" Width="94" Visibility="Hidden" Click="Drawbutton_Click"/>
+        <Button x:Name="nodrawbutton" Content="引かない" HorizontalAlignment="Left" Height="38" Margin="572,183,0,0" VerticalAlignment="Top" Width="94" Visibility="Hidden" Click="Nodrawbutton_Click"/>
+        <Label x:Name="dealerlabel" Content="ディーラーの点数" HorizontalAlignment="Left" Height="28" Margin="10,173,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.504,0.036"/>
+        <Label Content="あなたの点数" HorizontalAlignment="Left" Height="28" Margin="693,165,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.451,0.536"/>
+        <Label x:Name="dealerscore" Content="?" HorizontalAlignment="Left" Height="25" Margin="42,216,0,0" VerticalAlignment="Top" Width="27" RenderTransformOrigin="-0.752,0.408"/>
+        <Label x:Name="userscore" Content="0" HorizontalAlignment="Left" Height="25" Margin="724,216,0,0" VerticalAlignment="Top" Width="27" RenderTransformOrigin="-0.752,0.408"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Source="/Resources/tejina_trump_magic.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="684,310,0,0" VerticalAlignment="Top" Width="100" Source="/Resources/cardgame_syakapachi.png"/>
+    </Grid>
+</Window>
